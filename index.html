@@ -14,6 +14,16 @@
       color: #222;
       line-height: 1.6;
     }
+    /* Add blinking effect */
+.blink {
+  animation: blinker 1.5s linear infinite;
+  color: #d32f2f;           /* optional – makes it red */
+  font-weight: bold;
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
     header {
       background: #003366;
       color: #fff;
@@ -95,7 +105,9 @@
   <h1 style="margin:0; font-size:26px; font-weight:700;">
     Multidisciplinary Research: Innovations in Science, Arts and Commerce
   </h1>
-  <p style="margin:5px 0 15px 0; font-style:italic;"><blink>First Edition | November 2025</blink></p>
+    <p class="blink"><em>First Edition | October 2025</em></p>
+
+  <p style="margin:5px 0 15px 0; font-style:italic;">First Edition | November 2025</p>
   <p style="margin:0;">
     Published by <strong>Deep Science Publishing (USA | UK | India | Turkey)</strong><br>
     ISBN: 978-93-7185-157-2 | E-ISBN: 978-93-7185-737-6<br>
@@ -227,6 +239,7 @@
 </body>
 
 </html>
+
 
 
 
